@@ -1,16 +1,17 @@
-def fizzbuzz(n)
- if n % 3 == 0 && n % 5 == 0
+def fizzbuzz(num)
+
+ if num % 3 == 0 && num % 5 == 0
    'FizzBuzz'
- elsif n % 3 == 0
+ elsif num % 3 == 0
    'Fizz'
- elsif n % 5 == 0
+ elsif num % 5 == 0
    'Buzz'
  else 
-   n.to_s
+   num.to_s
  end
 end 
 
-
-(1..100).each do |n|
-  puts fizzbuzz(n)
+num_max = 100
+(1..100).each do |num|
+  puts fizzbuzz(num)
 end
